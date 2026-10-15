@@ -1,0 +1,752 @@
+/* Selector Universal y Tipografía Moderna */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #121212;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabecera negra de lado a lado */
+header {
+    width: 100%;
+    background-color: #000000;
+    border-bottom: 2px solid #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-texto {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-principal a.activo {
+    color: #ff3333;
+}
+
+.nav-principal a:hover {
+    color: #ff3333;
+}
+
+/* Menús desplegables */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 290px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    z-index: 10;
+    border: 1px solid #333333;
+    text-align: left;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Contenedor principal centrado */
+.main-layout {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.columna-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+/* Bloque de bienvenida centrado y recto */
+.hero-bienvenida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.hero-bienvenida h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 85px;
+    font-weight: 900; 
+    color: #111111;
+    white-space: nowrap;
+}
+
+.hero-bienvenida p {
+    max-width: 900px;
+    margin: 0 auto 35px auto;
+    color: #1f2937;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.btn-menu {
+    display: inline-block;
+    border: 2px solid #121212;
+    background: #ffffff;
+    color: #121212;
+    padding: 14px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn-menu:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+/* Categorías con imágenes */
+.categorias {
+    text-align: center;
+    width: 100%;
+}
+
+.categorias h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #121212;
+}
+
+.sub-cat {
+    color: #555555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.contenedor-cat {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cat-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.cat-item:hover {
+    transform: translateY(-5px);
+}
+
+.cat-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cat-item span {
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+    color: #121212;
+    font-size: 15px;
+}
+
+/* Demás secciones limpias */
+.productos, .promociones, .locales {
+    width: 100%;
+    text-align: center;
+}
+
+.productos h2, .promociones h2, .locales h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #121212;
+}
+
+.productos-destacados-container {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.productos-destacados-header h2 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #121212;
+    text-align: center;
+    margin-bottom: 100px; /* Espacio extra para que los círculos no tapen el título */
+    letter-spacing: 1px;
+}
+
+/* Bloque oscuro estilizado con ligeras esquinas curvas como tu muestra */
+.productos-destacados-bloque {
+    background-color: #0b0b0b;
+    border-radius: 24px;
+    padding: 40px 30px 60px 30px;
+    width: 100%;
+}
+
+/* Grid dinámico que alinea los 4 productos proporcionalmente */
+.grid-productos-moderno {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas individuales de productos */
+.card-producto-moderno {
+    flex: 1;
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor circular con el anillo estético e inclinación sutil */
+.imagen-circulo-wrapper {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #0b0b0b;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 6px #0b0b0b, 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin-top: -110px; /* Este truco hace que la imagen sobresalga hacia arriba flotando */
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-producto-moderno:hover .imagen-circulo-wrapper {
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* Imagen de la comida dentro del círculo */
+.imagen-circulo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Textos informativos de los productos */
+.card-producto-moderno h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.card-producto-moderno .precio {
+    color: #cccccc;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* Botón estilizado moderno */
+.btn-comprar {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    padding: 8px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #ffffff;
+    color: #0b0b0b;
+}
+
+.promo-box {
+    border: 1px dashed #94a3b8;
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 450px;
+    margin: 0 auto 10px auto;
+    color: #475569;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.grid-locales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.local-btn {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    padding: 10px 35px;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.local-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* NUEVO FOOTER OSCURO PROFESIONAL CON PATRÓN ONDULADO */
+.footer-premium {
+    width: 100%;
+    background-color: #050505;
+    /* Generamos líneas curvas oscuras sutiles usando un degradado repetitivo en CSS */
+    background-image: repeating-radial-gradient(circle at 100% 100%, transparent 0, #050505 40px), 
+                      linear-gradient(to right, #111111 1px, transparent 1px);
+    background-size: 100% 100%;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Columna de información izquierda */
+.footer-info {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contacto-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacto-etiqueta {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Cajas con borde blanco fino que encierran los datos */
+.contacto-caja-borde {
+    border: 1px solid #ffffff;
+    padding: 14px 20px;
+    max-width: 500px;
+}
+
+.contacto-caja-borde.pequeno {
+    display: inline-block;
+    padding: 6px 20px;
+    max-width: 160px;
+}
+
+.contacto-caja-borde p {
+    color: #ffffff;
+    font-size: 13.5px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Teléfonos destacados */
+.telefono-principal {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.telefono-secundario-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: -5px;
+}
+
+.prefijo-pais {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Contenedor de Redes Sociales Doradas */
+.redes-sociales {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.icono-red {
+    width: 42px;
+    height: 42px;
+    background-color: #d1a153; /* Tono dorado/ocre idéntico a tu muestra */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.icono-red svg {
+    width: 20px;
+    height: 20px;
+    fill: #050505; /* El icono interior se pinta oscuro */
+}
+
+.icono-red:hover {
+    transform: scale(1.1);
+    background-color: #e5b869;
+}
+
+/* Columna Derecha: Tarjeta Naranja Asimétrica */
+.footer-horario-card {
+    background-color: #d8531d; /* Color naranja rojizo de la muestra */
+    padding: 40px;
+    width: 320px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 40px; /* Hace el corte curvo más pronunciado abajo a la izquierda */
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.footer-horario-card h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.horario-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.horario-lista p {
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horario-separador-invisible {
+    height: 15px; /* Crea el espacio de separación entre bloques de días */
+}
+
+/* Botón Verde Flotante Permanente en la Esquina de la Pantalla */
+.whatsapp-flotante-pantalla {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-flotante-pantalla svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-flotante-pantalla:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+/* Ajuste Responsivo para Celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-info {
+        align-items: center;
+        text-align: center;
+    }
+    .contacto-caja-borde {
+        max-width: 100%;
+    }
+    .footer-horario-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    color: #ffffff;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: background-color 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+/* 1. Forzar a que el contenedor principal de la página permita elementos de ancho completo */
+.main-layout {
+    width: 100% !important;
+    max-width: none !important;
+    margin-bottom: 0 !important; /* Elimina márgenes inferiores molestos */
+}
+
+.columna-principal {
+    width: 100% !important;
+    gap: 45px;
+}
+
+/* 2. Hacer que el Footer ocupe absolutamente todo el ancho de la pantalla */
+.footer-premium {
+    width: 100vw !important; /* Ocupa el ancho total de la ventana del navegador */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #050505;
+    /* Mantenemos tu fondo ondulado */
+    background-image: repeating-radial-gradient(circle at 100% 100%, transparent 0, #050505 40px), 
+                      linear-gradient(to right, #111111 1px, transparent 1px);
+    background-size: 100% 100%;
+    padding: 60px 80px; /* Más espacio a los lados para que respire */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* 3. Corrección de color de las letras (para que resalten en blanco puro) */
+.direccion-destacada {
+    color: #ffffff !important; /* Cambiado a blanco puro */
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin-top: 5px;
+}
+
+.telefono-grande {
+    color: #ffffff !important; /* Cambiado a blanco puro */
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 5px 0 0 0;
+    line-height: 1.2;
+}
+
+/* Asegurar que las etiquetas pequeñas también brillen */
+.contacto-etiqueta {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+.promo-box {
+    border: 1px dashed #94a3b8;
+    background-color: #ffffff;
+    padding: 0; /* Quitamos el padding para que la imagen llegue hasta el borde punteado */
+    max-width: 450px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden; /* Esto hace que la imagen respete las esquinas redondeadas de la caja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nueva clase para controlar la imagen promocional */
+.img-promocion {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ajusta la imagen proporcionalmente */
+}
+/* SECCIÓN ¡VISÍTANOS! */
+.seccion-visitanos {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Mantiene el fondo limpio y claro de la captura */
+}
+
+/* Título principal grande y grueso */
+.seccion-visitanos h2 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Subtítulo descriptivo */
+.frase-visitanos {
+    font-size: 16px;
+    color: #121212;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.btn-ver-ubicacion {
+    display: inline-block;
+    background-color: #fbc65c; 
+    color: #000000;
+    padding: 15px 45px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-ver-ubicacion:hover {
+    background-color: #f0b446; 
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 768px) {
+    .grid-sabores-tres-columnas {
+        flex-direction: column; 
+        align-items: center;    
+    }
+}
+@media (max-width: 768px) {
+    .hero-bienvenida h1 {
+        font-size: 40px; 
+    }
+}
+@media (max-width: 768px) {
+    .footer-horario-card {
+        width: 100%;       
+        max-width: 360px;  
+    }
+}
+
+
